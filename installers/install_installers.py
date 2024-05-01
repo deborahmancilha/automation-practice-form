@@ -1,7 +1,7 @@
 import subprocess
 import sys
 
-# Função responsável por instalar os pacotes listados no arquivo requirements.txt
+# Função responsável por instalar os pacotes listados no arquivo requirements.txt -
 def install_packages():
         with open('requirements.txt', 'r') as file:
                 packages = [line.strip() for line in file if line.strip()]
