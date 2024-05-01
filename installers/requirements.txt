@@ -1,0 +1,7 @@
+webdriver-manager
+robotframework-seleniumlibrary
+robotframework
+robotframework-faker
+robotframework-metrics
+robotframework-retryfailed
+
