@@ -53,6 +53,6 @@ jobs:
         with:
           name: test-reports
           path: |
-            report/output.xml
-            report/log.html
-            report/report.html
+            /home/runner/work/automation-practice-form/automation-practice-form/output.xml
+            /home/runner/work/automation-practice-form/automation-practice-form/log.html
+            /home/runner/work/automation-practice-form/automation-practice-form/report.html
