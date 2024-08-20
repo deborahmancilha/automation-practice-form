@@ -1,9 +1,0 @@
---logtitle Log: Fluxo de preenchimento correto do formulário de registro de estudantes
---reporttitle Report: Fluxo preenchimento correto do formulário de registro de estudantes
---maxerrorlines 10
---loglevel DEBUG:INFO
---listener RetryFailed:3
-
-#Comando: 
-# robot --argumentfile args.txt CTpositivo-form.robot
-
