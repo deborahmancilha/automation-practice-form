@@ -47,12 +47,10 @@ jobs:
           export DISPLAY=:99
           xvfb-run --server-args="-screen 0 1920x1080x24" python -m robot --argumentfile ./tests/args-negativo.txt ./tests/CTnegativo-form.robot
 
-      - name: Upload test reports
-        if: always()  # Ensure this step runs even if previous steps fail
+      - name: Upload test artifacts
         uses: actions/upload-artifact@v4
         with:
           name: test-reports
           path: |
-            /home/runner/work/automation-practice-form/automation-practice-form/output.xml
-            /home/runner/work/automation-practice-form/automation-practice-form/log.html
-            /home/runner/work/automation-practice-form/automation-practice-form/report.html
+            ./report/*
+            ./screenshots/*
