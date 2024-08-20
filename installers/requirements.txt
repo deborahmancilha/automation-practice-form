@@ -4,4 +4,5 @@ robotframework
 robotframework-faker
 robotframework-metrics
 robotframework-retryfailed
+setuptools
 
