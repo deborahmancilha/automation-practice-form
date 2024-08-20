@@ -36,13 +36,13 @@ jobs:
           unzip -o /tmp/chromedriver.zip -d /tmp
 
       - name: Set up xvfb and run test CTpositivo
-        continue-on-error: true
+        continue-on-error: false
         run: |
           export DISPLAY=:99
           xvfb-run --server-args="-screen 0 1920x1080x24" python -m robot --argumentfile ./tests/args-positivo.txt ./tests/CTpositivo-form.robot
 
       - name: Set up xvfb and run test CTnegativo
-        continue-on-error: true
+        continue-on-error: false
         run: |
           export DISPLAY=:99
           xvfb-run --server-args="-screen 0 1920x1080x24" python -m robot --argumentfile ./tests/args-negativo.txt ./tests/CTnegativo-form.robot
