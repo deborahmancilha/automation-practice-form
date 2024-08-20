@@ -39,10 +39,10 @@ jobs:
         continue-on-error: true
         run: |
           export DISPLAY=:99
-          xvfb-run --server-args="-screen 0 1920x1080x24" python -m robot --argumentfile ./automation-practice-form/tests/args-positivo.txt ./automation-practice-form/tests/CTpositivo-form.robot
+          xvfb-run --server-args="-screen 0 1920x1080x24" python -m robot --argumentfile ./tests/args-positivo.txt ./testsCTpositivo-form.robot
 
       - name: Set up xvfb and run test CTnegativo
         continue-on-error: true
         run: |
           export DISPLAY=:99
-          xvfb-run --server-args="-screen 0 1920x1080x24" python -m robot --argumentfile ./automation-practice-form/tests/args-negativo.txt ./automation-practice-form/tests/CTnegativo-form.robot
+          xvfb-run --server-args="-screen 0 1920x1080x24" python -m robot --argumentfile ./tests/args-negativo.txt ./testsCTnegativo-form.robot
